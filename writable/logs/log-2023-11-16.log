@@ -1,0 +1,36 @@
+CRITICAL - 2023-11-16 19:43:54 --> CodeIgniter\Router\RouteCollection::get(): Argument #1 ($from) must be of type string, array given, called in C:\laragon\www\PesoLink\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->get([...], '/applicantlogin', 'UserController::applicantlogin')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\laragon\\www\\PesoLink\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-16 19:44:04 --> CodeIgniter\Router\RouteCollection::get(): Argument #1 ($from) must be of type string, array given, called in C:\laragon\www\PesoLink\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->get([...], '/applicantlogin', 'UserController::applicantlogin')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\laragon\\www\\PesoLink\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-16 19:44:33 --> CodeIgniter\Router\RouteCollection::get(): Argument #1 ($from) must be of type string, array given, called in C:\laragon\www\PesoLink\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->get([...], '/applicantlogin', 'UserController::applicantlogin')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\laragon\\www\\PesoLink\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-16 19:44:35 --> CodeIgniter\Router\RouteCollection::get(): Argument #1 ($from) must be of type string, array given, called in C:\laragon\www\PesoLink\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->get([...], '/applicantlogin', 'UserController::applicantlogin')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\laragon\\www\\PesoLink\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\PesoLink\\public\\index.php')

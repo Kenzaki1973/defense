@@ -1,0 +1,109 @@
+CRITICAL - 2023-12-06 19:03:16 --> syntax error, unexpected single-quoted string "category", expecting "]"
+in APPPATH\Models\PostjobModel.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolink\\app\\Models\\PostjobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PostjobModel')
+ 3 APPPATH\Controllers\EmployerController.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PostjobModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\EmployerController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-06 19:56:59 --> Class "App\Controllers\Dompdf" not found
+in APPPATH\Controllers\UserController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-06 19:57:28 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\UserController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 19:57:44 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\UserController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 19:57:55 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\UserController.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-06 20:01:10 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\User\userhome.php on line 102.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/userhome', [], true)
+ 3 APPPATH\Controllers\UserController.php(57): view('User/userhome', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-06 20:31:02 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\UserController.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-12-06 21:17:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolink\app\Controllers\UserController.php(48): CodeIgniter\Model->__call('get', Array)
+#6 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\pesolink\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\pesolink\app\Controllers\UserController.php(48): CodeIgniter\Model->__call('get', Array)
+#5 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#6 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-12-06 21:17:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `postjob`
+WHERE `category` = :category:
+AND `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\UserController.php(48): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-06 21:58:04 --> Call to undefined method App\Models\ApplicantModel::getRule
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserController.php(236): CodeIgniter\Model->__call('getRule', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->reg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-06 22:20:34 --> Call to undefined method App\Models\ApplicantModel::getRule
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserController.php(234): CodeIgniter\Model->__call('getRule', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->reg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')

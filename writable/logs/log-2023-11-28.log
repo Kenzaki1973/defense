@@ -1,0 +1,49 @@
+ERROR - 2023-11-28 22:50:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\laragon\www\pesolink\app\Controllers\UserController.php(88): CodeIgniter\BaseModel->save(Array)
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#3 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#6 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#7 D:\laragon\www\pesolink\app\Controllers\UserController.php(88): CodeIgniter\BaseModel->save(Array)
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-11-28 22:50:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`full_name`, `status`, `category`, `contact_number`, `address`, `email`, `password`) VALUES (:full_name:, :status:, :category:, :contact_number:, :address:, :email:, :password:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\UserController.php(88): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')

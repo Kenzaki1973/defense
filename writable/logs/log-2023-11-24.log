@@ -1,0 +1,243 @@
+CRITICAL - 2023-11-24 17:47:23 --> Call to undefined method App\Models\ApplicantModel::firstAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserController.php(18): CodeIgniter\Model->__call('firstAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-24 18:07:49 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\laragon\www\pesolink\app\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-11-24 18:07:50 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `applicant`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:18:58 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:22:46 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:23:16 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:27:14 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:27:14 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:33:25 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-24 18:35:35 --> Undefined variable $password
+in APPPATH\Controllers\UserController.php on line 77.
+ 1 APPPATH\Controllers\UserController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'D:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-24 18:44:47 --> mysqli_sql_exception: Duplicate entry 'q' for key 'applicant.qwe' in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\laragon\www\pesolink\app\Controllers\UserController.php(94): CodeIgniter\BaseModel->save(Array)
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-24 18:44:47 --> Duplicate entry 'q' for key 'applicant.qwe'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`full_name`, `status`, `category`, `contact_number`, `address`, `email`, `password`) VALUES (:full_name:, :status:, :category:, :contact_number:, :address:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(94): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-24 18:48:14 --> mysqli_sql_exception: Duplicate entry 'q' for key 'applicant.qwe' in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\laragon\www\pesolink\app\Controllers\UserController.php(94): CodeIgniter\BaseModel->save(Array)
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-24 18:48:14 --> Duplicate entry 'q' for key 'applicant.qwe'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`full_name`, `status`, `category`, `contact_number`, `address`, `email`, `password`) VALUES (:full_name:, :status:, :category:, :contact_number:, :address:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(94): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-24 18:48:37 --> mysqli_sql_exception: Duplicate entry 'q' for key 'applicant.qwe' in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\laragon\www\pesolink\app\Controllers\UserController.php(94): CodeIgniter\BaseModel->save(Array)
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-24 18:48:37 --> Duplicate entry 'q' for key 'applicant.qwe'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`full_name`, `status`, `category`, `contact_number`, `address`, `email`, `password`) VALUES (:full_name:, :status:, :category:, :contact_number:, :address:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(94): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-24 18:48:38 --> mysqli_sql_exception: Duplicate entry 'q' for key 'applicant.qwe' in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\laragon\www\pesolink\app\Controllers\UserController.php(94): CodeIgniter\BaseModel->save(Array)
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-24 18:48:38 --> Duplicate entry 'q' for key 'applicant.qwe'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`full_name`, `status`, `category`, `contact_number`, `address`, `email`, `password`) VALUES (:full_name:, :status:, :category:, :contact_number:, :address:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(94): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-24 18:48:39 --> mysqli_sql_exception: Duplicate entry 'q' for key 'applicant.qwe' in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 D:\laragon\www\pesolink\app\Controllers\UserController.php(94): CodeIgniter\BaseModel->save(Array)
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-24 18:48:39 --> Duplicate entry 'q' for key 'applicant.qwe'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`full_name`, `status`, `category`, `contact_number`, `address`, `email`, `password`) VALUES (:full_name:, :status:, :category:, :contact_number:, :address:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(94): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')

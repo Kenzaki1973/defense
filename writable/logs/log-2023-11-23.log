@@ -1,0 +1,178 @@
+ERROR - 2023-11-23 15:26:04 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in C:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesolink\app\Controllers\UserController.php(62): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 C:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-23 15:26:04 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`username`, `password`) VALUES (:username:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-23 15:26:05 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in C:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesolink\app\Controllers\UserController.php(62): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 C:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-23 15:26:05 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`username`, `password`) VALUES (:username:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-23 15:26:17 --> mysqli_sql_exception: Unknown column 'username' in 'field list' in C:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\laragon\www\pesolink\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\laragon\www\pesolink\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\laragon\www\pesolink\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\laragon\www\pesolink\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesolink\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesolink\app\Controllers\UserController.php(62): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->save()
+#10 C:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-11-23 15:26:17 --> Unknown column 'username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `applicant` (`username`, `password`) VALUES (:username:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:33 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:35 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:35 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:36 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:41 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:49 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:49 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:44:49 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:45:01 --> Undefined property: stdClass::$contact
+in APPPATH\Controllers\UserController.php on line 61.
+ 1 APPPATH\Controllers\UserController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contact', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:48:39 --> Undefined property: stdClass::$full_name
+in APPPATH\Controllers\UserController.php on line 58.
+ 1 APPPATH\Controllers\UserController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$full_name', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-11-23 15:48:40 --> Undefined property: stdClass::$full_name
+in APPPATH\Controllers\UserController.php on line 58.
+ 1 APPPATH\Controllers\UserController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$full_name', 'C:\\laragon\\www\\pesolink\\app\\Controllers\\UserController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink\\public\\index.php')

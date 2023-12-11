@@ -1,0 +1,159 @@
+CRITICAL - 2023-11-06 00:43:01 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 00:43:04 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 00:53:21 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:05:30 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:05:54 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 APPPATH\Controllers\EmployerController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:05:56 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 APPPATH\Controllers\EmployerController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:06:15 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:09:12 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:09:32 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 APPPATH\Controllers\EmployerController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 09:48:21 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 APPPATH\Controllers\EmployerController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 10:09:33 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 10:10:05 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 APPPATH\Controllers\EmployerController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 10:10:39 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 15.
+ 1 APPPATH\Controllers\EmployerController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\EmployerController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:03:11 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:11:19 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:18:20 --> Undefined constant "App\Controllers\postjob"
+in APPPATH\Controllers\EmployerController.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:18:31 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 52.
+ 1 APPPATH\Controllers\EmployerController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:20:02 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 52.
+ 1 APPPATH\Controllers\EmployerController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:20:04 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 52.
+ 1 APPPATH\Controllers\EmployerController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-06 14:21:53 --> Undefined variable $postjob
+in APPPATH\Controllers\EmployerController.php on line 52.
+ 1 APPPATH\Controllers\EmployerController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postjob', 'D:\\laragon\\www\\PesoLink\\app\\Controllers\\EmployerController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')

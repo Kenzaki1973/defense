@@ -1,0 +1,124 @@
+CRITICAL - 2023-11-21 12:39:49 --> Undefined variable $status
+in APPPATH\Views\Admin\employerdetails.php on line 62.
+ 1 APPPATH\Views\Admin\employerdetails.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'D:\\laragon\\www\\PesoLink\\app\\Views\\Admin\\employerdetails.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\PesoLink\\app\\Views\\Admin\\employerdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Admin/employerdetails', [], true)
+ 5 APPPATH\Controllers\AdminController.php(39): view('Admin/employerdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->empdetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-21 13:02:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\Admin\vacancydetails.php on line 53.
+ 1 APPPATH\Views\Admin\vacancydetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\PesoLink\\app\\Views\\Admin\\vacancydetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\PesoLink\\app\\Views\\Admin\\vacancydetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Admin/vacancydetails', [], true)
+ 5 APPPATH\Controllers\AdminController.php(125): view('Admin/vacancydetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->vacancydetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+CRITICAL - 2023-11-21 13:04:04 --> Undefined array key "emp_id"
+in APPPATH\Views\Admin\vacancydetails.php on line 67.
+ 1 APPPATH\Views\Admin\vacancydetails.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'D:\\laragon\\www\\PesoLink\\app\\Views\\Admin\\vacancydetails.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\PesoLink\\app\\Views\\Admin\\vacancydetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Admin/vacancydetails', [], true)
+ 5 APPPATH\Controllers\AdminController.php(125): view('Admin/vacancydetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->vacancydetails('18')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\PesoLink\\public\\index.php')
+ERROR - 2023-11-21 23:07:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon\www\pesolink\app\Controllers\UserController.php(45): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->getdata()
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\pesolink\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\pesolink\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon\www\pesolink\app\Controllers\UserController.php(45): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->getdata()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-21 23:07:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `applicant`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserController.php(45): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->getdata()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-11-21 23:08:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon\www\pesolink\app\Controllers\UserController.php(45): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->getdata()
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\pesolink\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\pesolink\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon\www\pesolink\app\Controllers\UserController.php(45): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->getdata()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-21 23:08:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `applicant`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserController.php(45): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->getdata()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')

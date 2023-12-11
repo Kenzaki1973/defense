@@ -1,0 +1,99 @@
+ERROR - 2023-12-04 03:51:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\laragon\www\pesolink\app\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\pesolink\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\pesolink\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 D:\laragon\www\pesolink\app\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+#6 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-04 03:51:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `applicant`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+ERROR - 2023-12-04 03:52:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolink\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolink\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\laragon\www\pesolink\app\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\laragon\www\pesolink\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolink\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolink\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolink\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\pesolink\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\pesolink\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 D:\laragon\www\pesolink\app\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+#6 D:\laragon\www\pesolink\system\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+#7 D:\laragon\www\pesolink\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\laragon\www\pesolink\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\pesolink\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\pesolink\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-04 03:52:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `applicant`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(18): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applicantlogin()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')
+CRITICAL - 2023-12-04 10:43:33 --> Object of class App\Models\ApplicantModel could not be converted to string
+in APPPATH\Controllers\UserController.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->getCategoryCounts()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolink\\public\\index.php')

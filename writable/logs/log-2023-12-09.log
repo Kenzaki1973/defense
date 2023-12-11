@@ -1,0 +1,499 @@
+CRITICAL - 2023-12-09 00:01:40 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\UserController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolinks\\public\\index.php')
+ERROR - 2023-12-09 00:05:56 --> mysqli_sql_exception: Column 'applic_id' cannot be null in C:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\laragon\www\pesolinks\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\laragon\www\pesolinks\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\laragon\www\pesolinks\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\laragon\www\pesolinks\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolinks\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolinks\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\pesolinks\app\Controllers\UserController.php(93): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\pesolinks\system\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+#9 C:\laragon\www\pesolinks\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\laragon\www\pesolinks\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\pesolinks\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\pesolinks\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-09 00:05:56 --> Column 'applic_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `application` (`applic_id`, `job_id`, `app_email`, `app_fullname`, `app_contact`, `app_address`, `emp_company`, `emp_location`, `emp_title`, `emp_per`, `emp_salary`, `app_resume`, `app_status`, `app_created`, `app_updated`) VALUES (:applic_id:, :job_id:, :app_email:, :app_fullname:, :app_contact:, :app_address:, :emp_company:, :emp_location:, :emp_title:, :emp_per:, :emp_salary:, :app_resume:, :app_status:, :app_created:, :app_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserController.php(93): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolinks\\public\\index.php')
+ERROR - 2023-12-09 00:06:06 --> mysqli_sql_exception: Column 'applic_id' cannot be null in C:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\laragon\www\pesolinks\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\laragon\www\pesolinks\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\laragon\www\pesolinks\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\laragon\www\pesolinks\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolinks\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolinks\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\pesolinks\app\Controllers\UserController.php(93): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\pesolinks\system\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+#9 C:\laragon\www\pesolinks\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\laragon\www\pesolinks\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\pesolinks\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\pesolinks\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-09 00:06:06 --> Column 'applic_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `application` (`applic_id`, `job_id`, `app_email`, `app_fullname`, `app_contact`, `app_address`, `emp_company`, `emp_location`, `emp_title`, `emp_per`, `emp_salary`, `app_resume`, `app_status`, `app_created`, `app_updated`) VALUES (:applic_id:, :job_id:, :app_email:, :app_fullname:, :app_contact:, :app_address:, :emp_company:, :emp_location:, :emp_title:, :emp_per:, :emp_salary:, :app_resume:, :app_status:, :app_created:, :app_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserController.php(93): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolinks\\public\\index.php')
+ERROR - 2023-12-09 02:51:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'paulyn', 'pesolink', 3306, '', 0)
+#1 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\pesolinks\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\pesolinks\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\pesolinks\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#6 D:\laragon\www\pesolinks\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#7 D:\laragon\www\pesolinks\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\laragon\www\pesolinks\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\pesolinks\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\pesolinks\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\pesolinks\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\pesolinks\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\pesolinks\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#5 D:\laragon\www\pesolinks\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#6 D:\laragon\www\pesolinks\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 D:\laragon\www\pesolinks\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\pesolinks\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 D:\laragon\www\pesolinks\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-12-09 02:51:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `postjob`
+WHERE `category` = :category:
+AND `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 03:00:27 --> Class "App\Filters\EmployerFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('employerhome', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+ERROR - 2023-12-09 03:11:05 --> mysqli_sql_exception: Column 'applic_id' cannot be null in D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolinks\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolinks\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolinks\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolinks\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\laragon\www\pesolinks\app\Controllers\UserController.php(93): CodeIgniter\Model->insert(Array)
+#8 D:\laragon\www\pesolinks\system\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+#9 D:\laragon\www\pesolinks\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\laragon\www\pesolinks\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\pesolinks\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 D:\laragon\www\pesolinks\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-09 03:11:05 --> Column 'applic_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `application` (`applic_id`, `job_id`, `app_email`, `app_fullname`, `app_contact`, `app_address`, `emp_company`, `emp_location`, `emp_title`, `emp_per`, `emp_salary`, `app_resume`, `app_status`, `app_created`, `app_updated`) VALUES (:applic_id:, :job_id:, :app_email:, :app_fullname:, :app_contact:, :app_address:, :emp_company:, :emp_location:, :emp_title:, :emp_per:, :emp_salary:, :app_resume:, :app_status:, :app_created:, :app_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserController.php(93): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->applynow()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 03:17:37 --> Undefined variable $lf
+in APPPATH\Views\User\categorylist.php on line 71.
+ 1 APPPATH\Views\User\categorylist.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lf', 'D:\\laragon\\www\\pesolinks\\app\\Views\\User\\categorylist.php', 71)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\User\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/categorylist', [], true)
+ 5 APPPATH\Controllers\UserController.php(148): view('User/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->categorymar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 03:59:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(45): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->jobdetails('5')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:41:45 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 127.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:42:16 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 127.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:42:17 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 127.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:42:17 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 127.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:43:17 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 124.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:43:18 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 124.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:43:18 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 124.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:43:53 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\EmployerController.php on line 125.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:44:19 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\EmployerController.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->registeremployer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:47:17 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\EmployerController.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->registeremployer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 05:47:36 --> Undefined variable $myresume
+in APPPATH\Controllers\EmployerController.php on line 101.
+ 1 APPPATH\Controllers\EmployerController.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $myresume', 'D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->registeremployer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 07:16:46 --> Undefined variable $reg
+in APPPATH\Views\Admin\employerdetails.php on line 62.
+ 1 APPPATH\Views\Admin\employerdetails.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $reg', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Admin\\employerdetails.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Admin\\employerdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Admin/employerdetails', [], true)
+ 5 APPPATH\Controllers\AdminController.php(40): view('Admin/employerdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->empdetails('12')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 07:27:25 --> Undefined variable $reg
+in APPPATH\Views\Admin\employerdetails.php on line 62.
+ 1 APPPATH\Views\Admin\employerdetails.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $reg', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Admin\\employerdetails.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Admin\\employerdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Admin/employerdetails', [], true)
+ 5 APPPATH\Controllers\AdminController.php(40): view('Admin/employerdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->empdetails('12')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 07:52:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(45): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->jobdetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 07:54:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(45): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->jobdetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 07:58:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(45): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->jobdetails('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:30:39 --> Undefined array key "employer_name"
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employer_name"', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(53): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:33:08 --> Undefined array key "employer_name"
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employer_name"', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(53): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:33:19 --> Undefined array key "employer_name"
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employer_name"', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(53): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('5')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:33:50 --> Undefined array key "employer_name"
+in APPPATH\Views\Employer\jobdetails.php on line 53.
+ 1 APPPATH\Views\Employer\jobdetails.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employer_name"', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\jobdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/jobdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(53): view('Employer/jobdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('3')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:44:34 --> Undefined variable $apps
+in APPPATH\Views\Employer\applicantdetails.php on line 60.
+ 1 APPPATH\Views\Employer\applicantdetails.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apps', 'D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\applicantdetails.php', 60)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\pesolinks\\app\\Views\\Employer\\applicantdetails.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/applicantdetails', [], true)
+ 5 APPPATH\Controllers\EmployerController.php(53): view('Employer/applicantdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('5')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:57:54 --> syntax error, unexpected token ">"
+in APPPATH\Views\Employer\applicantdetails.php on line 61.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/applicantdetails', [], true)
+ 3 APPPATH\Controllers\EmployerController.php(53): view('Employer/applicantdetails', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('5')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 08:58:27 --> syntax error, unexpected token ":", expecting "," or ";"
+in APPPATH\Views\Employer\applicantdetails.php on line 61.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Employer/applicantdetails', [], true)
+ 3 APPPATH\Controllers\EmployerController.php(53): view('Employer/applicantdetails', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->appdetails('5')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:23:21 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(174): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('5')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:24:27 --> The route for "appdetails/5" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('appdetails/5')
+ 2 APPPATH\Controllers\EmployerController.php(176): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('5')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:24:59 --> The route for "appdetails" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('appdetails')
+ 2 APPPATH\Controllers\EmployerController.php(176): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('5')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:30:52 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\EmployerController.php on line 176.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:30:54 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\EmployerController.php on line 176.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\EmployerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:32:39 --> The route for "appdetails/5" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('appdetails/5')
+ 2 APPPATH\Controllers\EmployerController.php(176): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('5')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+ERROR - 2023-12-09 09:41:19 --> mysqli_sql_exception: Column 'respond' cannot be null in D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\pesolinks\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\laragon\www\pesolinks\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\laragon\www\pesolinks\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\laragon\www\pesolinks\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\laragon\www\pesolinks\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\laragon\www\pesolinks\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\laragon\www\pesolinks\app\Controllers\EmployerController.php(179): CodeIgniter\Model->insert(Array)
+#8 D:\laragon\www\pesolinks\system\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('5')
+#9 D:\laragon\www\pesolinks\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+#10 D:\laragon\www\pesolinks\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\pesolinks\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 D:\laragon\www\pesolinks\system\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-09 09:41:19 --> Column 'respond' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `application` (`respond`, `app_created`, `app_updated`) VALUES (:respond:, :app_created:, :app_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmployerController.php(179): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('5')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
+CRITICAL - 2023-12-09 09:49:35 --> Array to string conversion
+in APPPATH\Controllers\EmployerController.php on line 179.
+ 1 APPPATH\Controllers\EmployerController.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\laragon\\www\\pesolinks\\app\\Controllers\\EmployerController.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('4')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\pesolinks\\public\\index.php')
